@@ -2,8 +2,8 @@ import qr from "./qr.svg";
 
 function Footer() {
     return (
-        <footer className="footer flex">
-            <div className="container flex">
+        <footer className="footer">
+            <div className="container">
                 <div>
                     Marcin Topolski &copy; All Right Reserved.
                 </div>
