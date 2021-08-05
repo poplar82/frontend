@@ -1,17 +1,17 @@
 import {Link} from "react-router-dom";
 import {useEffect} from "react";
+import logo from "../logo.png";
 
 function Main(props) {
     useEffect( () => {
-            props.onSubmit({title: "Main"});
-        }, []
-    );
+            props.onSubmit({title: logo});
+        },[]);
     return (
         <div className="container main">
             <h1>Projects:</h1>
             <ul>
                 <Link to="/cars">
-                    <li>Cars app - homework week 4 - so far it does not work in this version</li>
+                    <li>Cars app - homework week 4 and 7 - works but not well styled yet</li>
                 </Link>
                 <Link to="/weather">
                     <li>Weather app - homework week 5 - works but not well styled yet</li>

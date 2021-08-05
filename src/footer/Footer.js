@@ -3,7 +3,7 @@ import qr from "./qr.svg";
 function Footer() {
     return (
         <footer className="footer">
-            <div className="container">
+            <div className="container flex">
                 <div>
                     Marcin Topolski &copy; All Right Reserved.
                 </div>

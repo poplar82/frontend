@@ -1,11 +1,12 @@
 import {useEffect} from "react";
 import {Link} from "react-router-dom";
 import {getAspect} from "../aspectRequest";
+import logo from "../../logo.png";
 
 function Aspect(props) {
     useEffect(() => {
-        props.onSubmit({title: "Aspect"});
-    }, []);
+        props.onSubmit({title: logo});
+    },[]);
     function click() {
         getAspect(document.getElementById("address").value);
         alert("check your mailbox");

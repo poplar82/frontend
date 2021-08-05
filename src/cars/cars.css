@@ -1,80 +1,27 @@
-.nav, .footer  {
-    width: 100%;
-    background-color: #c0c0c0;
+.cars_list{
+    width: 600px;
 }
-.nav .container, .footer .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-}
-
-.footer__contact {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer__contact__text {
-    text-align: right;
-    padding-right: 10px;
-}
-
-.container {
-    width: 960px;
+.search {
     margin: 0 auto;
+    width: 450px;
+    padding: 20px 0;
 }
-
-.nav__logo {
-    height: 60px;
-}
-
-.footer__contact__qr {
-    height: 80px;
-    background-color: #fff;
-    border: 2px solid #fff;
-}
-
-main {
-    padding-top: 20px;
-    font-size: 1.2em;
-    min-height: 400px;
-    height: calc(100vh - 60px - 75px - 20px);
-}
-
 .cars_column {
-    display: flex;
+    width: 600px;
 }
-
+.cars_column div:first-child {
+    margin-left: 10px;
+    width: 10px;
+}
 .cars_column div {
-    width: 100px;
+    width: 95px;
 }
-
-#id_column {
-    width: 30px;
-}
-li:first-child {
+.aa:nth-child(odd) {
     background-color: #c0c0c0;
 }
-li:nth-child(odd):not(:first-child) {
-    background-color: rgba(0,0,0,0.1);
+.aa:nth-child(even) {
+    background-color: #cccccc;
 }
-li:nth-child(even) {
-    background-color: rgba(0,0,0,0.05);
-}
-li {
-    padding: 3px;
-}
-li a {
-    text-decoration: none;
-    color: black;
-}
-
-.flex {
-    display: flex;
-    margin: 10px 0;
-}
-
-.label {
-    width: 70px;
+.header_list {
+    background-color: gray;
 }

@@ -1,15 +1,14 @@
 import {useEffect, useState} from "react";
 import {getWeatherForCity} from "../weatherRequest";
 import {Link} from "react-router-dom";
+import logo from "../logo.png";
 
 import "./weather.css"
 
 function Weather(props) {
     useEffect(() => {
-            props.onSubmit({title: "Weather"});
-            fetchAndRenderWeather();
-        }, []
-    );
+            props.onSubmit({title: logo});
+        },[]);
     const [weather, setWeather] = useState({});
     const [location, setLocation] = useState("");
     const fetchAndRenderWeather = async city => {
@@ -57,7 +56,7 @@ function Weather(props) {
                         <div>humidity: {weather.currentHumidity}%</div>
                     </div>
                     <div>
-                        <img className="icon" src={weather.currentConditionIcon}/>
+                        <img alt="weather icon" className="icon" src={weather.currentConditionIcon}/>
                         <div>{weather.currentConditionText}</div>
                         <div>precip: {weather.currentPrecipMM}</div>
                         <div>UV index: {weather.currentUV}</div>
