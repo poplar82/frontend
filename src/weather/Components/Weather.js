@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import {getWeatherForCity} from "../weatherRequest";
+import {getWeatherForCity, getWeatherHistory} from "../weatherRequest";
 import {Link} from "react-router-dom";
 import logo from "../logo.png";
 
@@ -10,9 +10,13 @@ function Weather(props) {
             props.onSubmit({title: logo});
         },[]);
     const [weather, setWeather] = useState({});
+    const [weatherHistory, setWeatherHistory] = useState([]);
     const [location, setLocation] = useState("");
     const fetchAndRenderWeather = async city => {
         setWeather(await getWeatherForCity(city).then(data => {
+            return data.data;
+        }));
+        setWeatherHistory(await getWeatherHistory().then(data => {
             return data.data;
         }));
         document.getElementById("card").style.visibility = "visible";
@@ -58,7 +62,7 @@ function Weather(props) {
                     <div>
                         <img alt="weather icon" className="icon" src={weather.currentConditionIcon}/>
                         <div>{weather.currentConditionText}</div>
-                        <div>precip: {weather.currentPrecipMM}</div>
+                        <div>precip: {weather.currentPrecipitationMM}mm</div>
                         <div>UV index: {weather.currentUV}</div>
                     </div>
                 </div>
@@ -75,6 +79,24 @@ function Weather(props) {
                         <div>PM10: {pm10}</div>
                     </div>
                 </div>
+                <table className="temp_history">
+                    <tr>
+                        <th className="id_column">No</th>
+                        <th className="temp_column">Temp</th>
+                        <th className="time_column">Time</th>
+                        <th className="date_column">Date</th>
+                    </tr>
+                    {
+                        weatherHistory.map(data =>
+                            <tr key={data.id}>
+                                <td className="id_column" >{data.id}</td>
+                                <td className="temp_column">{data.temperature}&deg;C</td>
+                                <td className="time_column">{data.time}</td>
+                                <td className="date_column">{data.date}</td>
+                            </tr>
+                        )
+                    }
+                </table>
             </div>
             <Link to={"/"}>
                 <button>Back</button>

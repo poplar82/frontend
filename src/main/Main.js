@@ -14,7 +14,7 @@ function Main(props) {
                     <li>Cars app - homework week 4 and 7 - works but not well styled yet</li>
                 </Link>
                 <Link to="/weather">
-                    <li>Weather app - homework week 5 - works but not well styled yet</li>
+                    <li>Weather app - homework week 5 and 8 - works but not well styled yet</li>
                 </Link>
                 <Link to="/aspect">
                     <li>Aspect app - homework week 6 - works but not well styled yet</li>

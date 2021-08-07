@@ -17,5 +17,25 @@
     flex-direction: column;
     align-items: center;
 }
+.temp_history {
+    width: 250px;
+    margin-top: 20px;
+}
+.id_column {
+    width: 25px;
+    text-align: right;
+}
+.temp_column {
+    width: 50px;
+    text-align: right;
+}
+.time_column {
+    width: 80px;
+    text-align: right;
+}
+.date_column {
+    width: 105px;
+    text-align: right;
+}
 .visible {
 visibility: hidden}

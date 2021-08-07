@@ -1,11 +1,21 @@
 
-T
-$src/cars/components/Button/Button.js,d\e\de1d4db7175890f8a576f4316f06bda653cbad1f
-N
-src/cars/components/Car/Car.js,b\1\b1c54621b2c7e46350b79b53b79676aa848f22bf
-S
-#src/cars/components/Edit/CarEdit.js,7\2\720e9a86a28a83ef34577068a31dc183be136745
-P
- src/cars/components/CarsColor.js,3\1\3157a9efe790e445903fca47c5dc927ba5bba605
-Q
-!src/cars/components/Add/CarAdd.js,7\6\761e96624fd76c54ffa9425ca078a7a3603a2fe8
+A
+package-lock.json,f\a\fa288d1472d29beccb489a676f68739ad365fc47
+<
+package.json,7\0\7030d0b2f71b999ff89a343de08c414af32fc93a
+K
+src/aspect/aspectRequest.js,3\4\34d327b0d53f9729846e3a55b692fb606ca5669c
+D
+src/footer/Footer.js,a\3\a3ed541c07964c14fdde08f3d30ae9b3ae81e636
+>
+src/nav/Nav.js,c\f\cf5c5d4d6a3d5bde820569f97e73ad541b8bed4b
+O
+src/aspect/components/Aspect.js,7\7\774b60959e5ad9390924ddf202663e63e49c1181
+A
+public/index.html,f\4\f43ecdf8d666ee908aacce037b4cd72159e4741b
+;
+src/App.css,a\a\aa7165aefcf8ee3d73539e99ab007daf1aa18d8d
+A
+src/cars/cars.css,b\1\b108763c47d1fa29cb3f9dfa4f0032de6a5944ca
+=
+src/index.css,c\5\c5d38a62d1faae90a2acaa34b79a7ef365c917e4
